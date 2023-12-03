@@ -1,0 +1,35 @@
+.login-outer-box {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  max-width: 450px; /* 고정 크기 데스크톱 뷰 */
+  padding: 50px 0px;
+  gap: 20px;
+}
+
+.login-box {
+  // align-items: center;
+  display: flex;
+  justify-content: center;
+
+  height: 100vh; /* 화면 높이에 맞게 조절 */
+}
+
+.page-name-title {
+  color: dimgray;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-login-underline {
+  color: #80c0c0;
+  cursor: pointer;
+}
+
+.login-metamask {
+  width: 100%;
+}

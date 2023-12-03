@@ -1,0 +1,19 @@
+version: "2"
+
+networks:
+  eticket_net:
+    external: true
+
+services:
+  eticket_minter:
+    env_file:
+      - ../env/eticket-dev-blockchain.env
+      - ../env/eticket-dev-datasource.env
+    environment:
+      ETICKET_MINTER_TASK_QUEUE_CAPACITY: 8096
+    build: ../../workspace/eticket-minter/Dockerfile/
+    image: eticket/minter
+    container_name: eticket_minter
+    restart: on-failure
+    networks:
+      - eticket_net

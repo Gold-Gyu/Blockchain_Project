@@ -1,0 +1,50 @@
+.concert-info {
+  padding: 0px 20px;
+}
+
+.notice-text {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-left: 20px;
+}
+
+/* DetailContent.css */
+.qna-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.qna-item {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.qna-question {
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qna-answer {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.qna-answer.active {
+  max-height: 500px; /* 최대 높이 설정 */
+  transition: max-height 0.3s ease-in-out; /* 펼치기/접기 애니메이션 */
+}
+
+.qna-answer p {
+  margin: 0;
+}
+
+.qna-item:not(:first-child) .qna-question {
+  border-top: 1px solid #ccc; /* 첫 번째 항목 제외하고 위에 선 추가 */
+}

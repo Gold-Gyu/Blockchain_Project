@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  eticket_ipfs:
+    image: "ipfs/kubo:v0.22.0"
+    container_name: eticket_ipfs
+    restart: on-failure
+    volumes:
+      - "../../ipfs/swarm.key:/data/ipfs/swarm.key"
+      - "../../ipfs/ipfs_data:/data/ipfs"
+      - "../../ipfs/ipfs_staging:/export"
+    ports:
+      - "4001:4001"
+      - "4001:4001/udp"
+      - "60880:8080"
+      - "127.0.0.1:60882:5001"

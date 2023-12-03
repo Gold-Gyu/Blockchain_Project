@@ -1,0 +1,11 @@
+IPFS_GATEWAY_URL = 'https://j9c203.p.ssafy.io/services/ipfs-gateway/'
+IPFS_UPLOADER_URL = 'http://j9c203.p.ssafy.io:39880'
+
+BLOCKCHAIN_RPC_URL = 'https://j9c203.p.ssafy.io/services/blockchain/rpc'
+BLOCKCHAIN_CHAIN_ID = '12345'
+BLOCKCHAIN_PRIVATE_KEY = '0x8f0c70886111d0cd6d21126ded17a1d3d3bb23ae664e1e8b1d1f9f127288f4db'
+BLOCKCHAIN_CONTRACT_ADDRESS = '0xCf80F524400dD51e5875C151F61fd81BEBa770eD'
+
+DATASOURCE_URL = 'localhost:33066'
+DATASOURCE_USERNAME = 'root'
+DATASOURCE_PASSWORD = 'hello_eticket'

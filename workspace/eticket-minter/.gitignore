@@ -1,0 +1,6 @@
+.vscode
+.gocache
+**/*.sol.abi
+**/*.sol.bin
+Dockerfile/**
+!Dockerfile/Dockerfile

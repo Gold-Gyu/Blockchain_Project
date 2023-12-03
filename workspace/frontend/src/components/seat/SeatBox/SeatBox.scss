@@ -1,0 +1,38 @@
+/* SeatBox.scss */
+/* SeatBox.scss */
+.seat-box {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  border: 2px solid #000;
+//   border-radius: 50%; /* 동그란 모양으로 만듭니다. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* 텍스트 크기를 조정합니다. */
+  font-weight: bold; /* 굵은 글꼴을 사용합니다. */
+  cursor: pointer; /* 커서를 손가락 모양으로 변경하여 클릭 가능한 것처럼 보이게 함 */
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* 배경색과 텍스트 색상 변화에 애니메이션을 추가합니다. */
+}
+
+/* 선택된 좌석의 스타일 */
+.seat-box.selected {
+  background-color: #80c0c0; /* 선택된 좌석의 배경색을 변경 */
+  color: white; /* 텍스트 색상을 변경하여 흰색으로 표시 */
+}
+
+/* 선택된 좌석의 스타일 */
+.seat-box.selected {
+  background-color: #80c0c0; /* 선택된 좌석의 배경색을 변경 */
+  color: white; /* 텍스트 색상을 변경하여 흰색으로 표시 */
+  font-weight: bold; /* 굵게 표시 */
+}
+
+/* 비활성화된 좌석의 스타일 */
+.seat-box[disabled] {
+  background-color: #ccc; /* 비활성화된 좌석의 배경색을 회색으로 변경 */
+  pointer-events: none; /* 클릭을 비활성화 */
+  cursor: not-allowed; /* 커서를 비활성화된 상태로 변경 */
+}

@@ -1,0 +1,57 @@
+.meta-outer-box {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  max-width: 450px; /* 고정 크기 데스크톱 뷰 */
+  padding: 50px 0px;
+  gap: 20px;
+}
+
+.login-box {
+  // align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh; /* 화면 높이에 맞게 조절 */
+}
+
+.page-name-title {
+  color: dimgray;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.metamask-logo-contain {
+  display: flex;
+}
+
+.meta-logo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meta-logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.meta-box {
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  // width: 100%;
+}
+
+.next-time-connect {
+  margin: 0px auto;
+  text-decoration: underline;
+  color: gray;
+  cursor: pointer;
+}

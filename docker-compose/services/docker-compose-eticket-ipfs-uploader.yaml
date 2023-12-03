@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  eticket_ipfs_uploader:
+    environment:
+      GIN_MODE: release
+      ETICKET_KUBO_RPC_URL: http://localhost:60882
+    build: ../../workspace/eticket-ipfs-uploader/Dockerfile
+    image: eticket/ipfs-uploader
+    container_name: eticket_ipfs_uploader
+    restart: on-failure
+    network_mode: host

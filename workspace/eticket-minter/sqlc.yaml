@@ -1,0 +1,12 @@
+version: '2'
+sql:
+- engine: mysql
+  schema: ../../docker-compose/services/data/mysql/initdb.d/0-schema.sql
+  queries:
+  - sqlqueries/
+  gen:
+    go:
+      package: persistence
+      out: internal/persistence/generated
+      sql_package: database/sql
+      sql_driver: github.com/go-sql-driver/mysql

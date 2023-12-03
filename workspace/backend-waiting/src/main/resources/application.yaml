@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:33066/eticket
+    username: root
+    password: hello_eticket
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+eticket:
+  redis:
+    auth:
+      host: localhost
+      port: 36379
+      database: 1
+    reservation:
+      host: localhost
+      port: 36379
+      database: 2
+    waiting:
+      host: localhost
+      port: 36379
+      database: 4
+    ticketing:
+      host: localhost
+      port: 36379
+      database: 3
+
+  auth:
+    jwt:
+      insecure: true
+      insecure-key-path: insecure-rsa-key.pem
+      issuer: eticket.org
+      access-token-lifetime: 3600
+      refresh-token-lifetime: 345600

@@ -1,0 +1,18 @@
+.page-layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-width: 360px;
+  min-height: 100vh;
+  max-height: 1200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+  padding: 0px 15px;
+  box-shadow:rgb(219, 219, 219) 0px 0px 10px;
+}
+

@@ -1,0 +1,47 @@
+/* PriceInfo.scss */
+.priceinfo-box {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  //   text-align: center;
+}
+
+.price-text {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.price-list-box {
+  //   display: flex;
+  flex-wrap: wrap; /* 여기에서 Flexbox를 사용하여 항목을 한 줄에 묶습니다. */
+  justify-content: space-between;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 calc(50% - 20px); /* 항목을 반씩 나누어 정렬합니다. */
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* 항목 간격을 조절합니다. */
+}
+
+.seat-type {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  flex: 1; /* 좌측에 정렬되도록 설정 */
+}
+
+.price-value {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ff6600; /* 가격 글자색 변경 예시 */
+  flex: 1; /* 우측에 정렬되도록 설정 */
+  text-align: right; /* 우측 정렬을 적용합니다. */
+}

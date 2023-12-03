@@ -1,0 +1,19 @@
+.seat-container {
+  width: 300px;
+  position: absolute;
+  // bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  // margin-right: 13px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.seat-outer-box {
+  display: flex;
+  justify-content: center;
+}
+.modal-frame {
+  width: 100%;
+  height: 80%;
+  background-color: white;
+}

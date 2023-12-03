@@ -1,0 +1,39 @@
+/* SeatStage 컴포넌트 스타일 */
+.seat-stage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
+  }
+  
+  /* 콘서트 제목 스타일 */
+  .concert-title3 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* 콘서트 장소 스타일 */
+  .concert-location {
+    color: #888; /* 회색 계열 색상 */
+    margin-bottom: 20px;
+  }
+  
+  /* STAGE BOX 스타일 */
+  .stage-box {
+    width: 300px; /* STAGE BOX 너비 */
+    height: 200px; /* STAGE BOX 높이 */
+    background-color: #333; /* 검정 계열 색상 */
+    color: #fff; /* 텍스트 색상 */
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: 2px solid #000; /* 테두리 스타일 추가 */
+    border-radius: 10px; /* 둥근 테두리 스타일 */
+  }
+  

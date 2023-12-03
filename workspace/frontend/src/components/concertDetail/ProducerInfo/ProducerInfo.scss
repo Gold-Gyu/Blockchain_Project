@@ -1,0 +1,50 @@
+.producer-info-container {
+//   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold; /* 제목 글꼴을 볼드(bold)로 설정 */
+    border-bottom: 2px solid #333; /* 밑줄 추가 */
+    padding-bottom: 5px; /* 밑줄과 제목 사이의 간격 조정 */
+  }
+  
+
+.info-label {
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.cancel-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.cancel-info-table th,
+.cancel-info-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.cancel-info-table th {
+  background-color: #f2f2f2;
+}
+
+.cancel-info-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.cancel-method-content p,
+.delivery-info-content p,
+.mobile-ticket-info-content p,
+.notice-info-content p {
+  margin: 10px 0;
+  line-height: 1.4;
+}

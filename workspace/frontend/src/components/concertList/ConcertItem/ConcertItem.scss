@@ -1,0 +1,92 @@
+.concert-list-main-box {
+  padding-top: 20px;
+}
+
+.concert-item-outer-box {
+  display: flex;
+  width: 100%;
+  // border: 1px solid whitesmoke;
+  border-radius: 6px;
+}
+
+.base2-line {
+  margin-top: 20px;
+  //   margin-bottom: 20px;
+  width: 100%;
+  height: 1px;
+  border: none;
+  margin: 0;
+  background-color: #eee;
+}
+
+.concert-left-box {
+  display: flex;
+  justify-content:flex-end;
+  width: 50px;
+  padding-right: 10px;
+}
+
+.concert-center-box {
+  display: flex;
+}
+
+.concert-right-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 2px;
+}
+
+.concert-context {
+  display: flex;
+}
+
+.concert-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  width: 20px;
+  position: absolute;
+  color: white;
+}
+
+.rank-frame {
+  position: absolute;
+  align-items: center;
+  width: 20px;
+}
+
+.rank-box {
+  margin-right: 10px;
+  position: relative;
+}
+
+.concert-tag {
+  border: 1px solid red;
+  max-width: 50px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-size: 0.6rem;
+  // margin-top: 5px;
+}
+
+.concert-title {
+  max-width: 200px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.concert-location-text {
+  font-size: 0.9rem;
+  max-width: 185px;
+}
+
+.concert-date {
+  font-size: 0.5rem;
+  color: lightslategray;
+}

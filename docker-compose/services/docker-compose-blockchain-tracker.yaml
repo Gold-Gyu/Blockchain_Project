@@ -1,0 +1,19 @@
+version: "2"
+
+networks:
+  eticket_net:
+    external: true
+
+services:
+  eticket_blockchain_tracker:
+    env_file:
+      - ../env/eticket-dev-blockchain.env
+      - ../env/eticket-dev-datasource.env
+    environment:
+      ETICKET_BLOCKCHAIN_LOWER_BLOCK: "-1"
+    build: ../../workspace/blockchain-tracker/Dockerfile/
+    image: eticket/blockchain-tracker
+    container_name: eticket_blockchain_tracker
+    restart: on-failure
+    networks:
+      - eticket_net

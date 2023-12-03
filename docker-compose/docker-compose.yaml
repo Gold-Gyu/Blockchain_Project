@@ -1,0 +1,49 @@
+version: "2"
+
+volumes:
+  eticket_main_data:
+    external: true
+
+networks:
+  eticket_net:
+    external: true
+
+services:
+  eticket_mysql:
+    extends:
+      file: ./services/docker-compose-mysql.yaml
+      service: eticket_mysql
+
+  eticket_redis:
+    extends:
+      file: ./services/docker-compose-redis.yaml
+      service: eticket_redis
+
+  eticket_blockchain_tracker:
+    extends:
+      file: ./services/docker-compose-blockchain-tracker.yaml
+      service: eticket_blockchain_tracker
+    depends_on:
+      - eticket_mysql
+
+  eticket_minter:
+    extends:
+      file: ./services/docker-compose-eticket-minter.yaml
+      service: eticket_minter
+    depends_on:
+      - eticket_mysql
+
+  eticket_backend_waiting:
+    extends:
+      file: ./services/docker-compose-backend-waiting.yaml
+      service: eticket_backend_waiting
+    depends_on:
+      - eticket_redis
+
+  eticket_backend:
+    extends:
+      file: ./services/docker-compose-backend.yaml
+      service: eticket_backend
+    depends_on:
+      - eticket_mysql
+      - eticket_redis

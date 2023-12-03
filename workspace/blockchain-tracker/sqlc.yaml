@@ -1,0 +1,13 @@
+version: '2'
+sql:
+- engine: mysql
+  schema: sql/schema.sql
+  queries:
+  - sql/block_sync_log.sql
+  - sql/nft_ticket.sql
+  gen:
+    go:
+      package: persistence
+      out: persistence/generated
+      sql_package: database/sql
+      sql_driver: github.com/go-sql-driver/mysql

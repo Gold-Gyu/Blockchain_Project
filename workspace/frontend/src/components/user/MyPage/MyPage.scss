@@ -1,0 +1,157 @@
+.mypage-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color: #f5f5f5, $alpha: 1.0);
+}
+
+.my-info {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+
+  .nickName {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .edit-info {
+    height: 40px;
+    margin: auto 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: #80c0c0;
+    border: 0px;
+
+    .edit-info-text {
+      margin: auto;
+    }
+  }
+}
+
+.wallet {
+  display: flex;
+  justify-content: start;
+  background-color: white;
+
+  .my-wallet {
+    margin: auto 6px auto 20px;
+    padding-bottom: 2px;
+  }
+
+  .address {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 20%;
+  }
+
+  img {
+    margin: auto 5px auto 5px;
+    height: 37%;
+    width: 5%;
+  }
+
+}
+
+.inventory {
+  background-color: rgba($color: #f5f5f5, $alpha: 1.0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.my-NFT {
+  height: auto;
+  background-color: white;
+  margin: 20px 10px 0 10px;
+  padding: 10px 10px 0px 10px;
+  border-radius: 10px;
+
+  .upper-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .my-NFT-text {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .my-NFT-more {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: grey;
+    }
+  }
+}
+
+.NFT-list {
+  display: flex;
+  margin-top: 20px;
+}
+
+.my-ticket {
+  background-color: white;
+  margin: 20px 10px 10px 10px;
+  padding: 10px;
+  border-radius: 10px;
+
+  img {
+    width: 90px;
+    height: 120px;
+  }
+
+  .upper-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .my-ticket-text {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .my-ticket-more {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: grey;
+    }
+  }
+}
+
+.concert-container {
+  background-color: white;
+
+  .my-concert {
+    display: flex;
+    // justify-content: space-between;
+    
+    .concert-poster {
+      img {
+        height: 90%;
+      }
+    }
+
+    .concert-info {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 5px;
+      width: 100%;
+      
+      .my-ticket-arrow {
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        h3 {
+          margin-top: 0px;
+        }
+      }
+    }
+
+  }
+
+  hr {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+}

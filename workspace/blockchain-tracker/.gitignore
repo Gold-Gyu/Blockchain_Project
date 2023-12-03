@@ -1,0 +1,7 @@
+.gocache
+.vscode
+contract/*.abi
+contract/*.bin
+
+Dockerfile/**/*
+!Dockerfile/Dockerfile

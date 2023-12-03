@@ -1,0 +1,101 @@
+.detail-poster-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.back-point {
+  position: absolute;
+  top: 0;
+  padding: 25px 20px;
+  z-index: 1;
+}
+
+.poster-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지를 화면에 꽉 채우도록 설정 */
+  filter: blur(8px); /* 흐린 효과를 추가 */
+}
+
+.poster-concert-box {
+  width: 90%;
+  gap: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 330px;
+  // padding-right: 200px;
+  // justify-content: space-between;
+}
+
+.poster-left-box {
+  width: 90%
+}
+
+.poster-right-box {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  // color: white;
+}
+
+
+
+.concert-title-text {
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /* 최대 라인 수 */
+  -webkit-box-orient: vertical;
+  max-height: 6.4rem; /* 최대 높이 */
+  font-size: 1.4rem;
+  color: #000;
+  line-height: 1.33;
+  font-weight: bolder;
+}
+
+.concert-period {
+  margin-top: 0.5rem;
+  // font-size: 0;
+}
+
+.concert-location-box {
+  display: flex;
+  gap: 5px;
+}
+.concert-location {
+  position: relative;
+  // padding-left: 2.2rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #000;
+}
+
+.concert-time {
+  position: relative;
+  // padding-left: 2.2rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: #000;
+}
+
+.concert-period-box {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+.good {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}

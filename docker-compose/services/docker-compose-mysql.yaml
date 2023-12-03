@@ -1,0 +1,26 @@
+version: "2"
+
+volumes:
+  eticket_main_data:
+    external: true
+
+networks:
+  eticket_net:
+    external: true
+
+services:
+  eticket_mysql:
+    environment:
+      MYSQL_ROOT_PASSWORD: hello_eticket
+      TZ: Asia/Seoul
+    image: "mysql:8.1"
+    container_name: eticket_mysql
+    restart: on-failure
+    volumes:
+      - "eticket_main_data:/var/lib/mysql"
+      - "./data/mysql/initdb.d:/docker-entrypoint-initdb.d"
+      - "./data/mysql/conf.d/charset.cnf:/etc/mysql/conf.d/charset.cnf"
+    ports:
+      - "33066:3306"
+    networks:
+      - eticket_net

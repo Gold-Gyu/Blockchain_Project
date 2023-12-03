@@ -1,0 +1,15 @@
+version: "2"
+
+networks:
+  eticket_net:
+    external: true
+
+services:
+  eticket_redis:
+    image: "redis:7.2"
+    container_name: eticket_redis
+    restart: on-failure
+    ports:
+      - "36379:6379"
+    networks:
+      - eticket_net
